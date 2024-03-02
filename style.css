@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 4000px;
+  background-color: #fff7e4;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 4%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  width: 4rem;
+  cursor: pointer;
+  margin: 30px 0;
+  box-sizing: 4rem;
+  left: 50rem;
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1.3rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #3f6b6b;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid;
+  transform: scaley(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scale(0.5);
+}
+
+/* hero section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("gambar/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding: 10rem 5%;
+  margin-left: 30rem;
+}
+
+.hero .content h1 {
+  font-family: "Baloo Thambi 2";
+  font-size: 3rem;
+  text-align: center;
+  color: #0e3b35;
+}
+
+.hero .content h2 {
+  font-family: "Averia Serif Libre";
+  font-size: 5rem;
+  text-align: center;
+  color: rgb(4, 48, 46);
+}
+
+.hero .content .cta {
+  margin-top: 2rem;
+  margin-left: 8rem;
+  display: inline-block;
+  background-color: rgb(4, 48, 46);
+  border-radius: 1rem;
+  padding: 0.6rem 3rem;
+  color: whitesmoke;
+}
+
+.hero .content .cta:hover {
+  color: rgb(192, 220, 245);
+  transition: 1s;
+}
+
+/* more section */
+.more {
+  padding: 10rem 7% 1.4rem;
+}
+
+.more h2 {
+  text-align: center;
+  font-family: "Baloo Thambi 2";
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  color: #0e3b35;
+}
+
+.more .row {
+  display: flex;
+}
+
+.more .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.more.row .content h3 {
+  font-family: "Averia Serif Libre";
+  font-size: 2rem;
+  color: #0e3b35;
+  margin-bottom: 1rem;
+}
+
+.more .row .content p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* eksplore section */
+.eksplore {
+  padding: 10rem 7% 1.4rem;
+}
+
+.eksplore h2 {
+  text-align: center;
+  font-family: "Baloo Thambi 2";
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #0e3b35;
+}
+
+.eksplore h4 {
+  max-width: 30rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-left: 25rem;
+}
+
+.eksplore .row {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.eksplore .row .base1,
+.base2,
+.base3 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.eksplore .row .base1 img,
+.base2 img,
+.base3 img {
+  width: 9rem;
+}
+.eksplore .row .base1 h3,
+.base2 h3,
+.base3 h3 {
+  color: #3f6b6b;
+  font-family: "Baloo Thambi 2";
+}
+
+.eksplore .row .base1 p,
+.base2 p,
+.base3 p {
+  color: #122d29;
+  font-weight: 300;
+  max-width: 30rem;
+  padding: 3rem;
+}
+
+/* Galery Section */
+
+/* .galery  {
+  padding: 5rem 7% 1.4rem;
+  
+} */
+
+/* .galery h2 {
+  text-align: center;
+  font-family: "Baloo Thambi 2";
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #0e3b35;
+} */
+
+/* .galery h4 {
+  max-width: 30rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-left: 25rem;
+} */
+
+/* .wrapper{
+max-width: 1200px;
+display: flex;
+align-items: center;
+justify-content: center;
+} */
+
+/* .galery .wrapper .carousel {
+  white-space: nowrap;
+  cursor: pointer; /* digunaakan untuk mengubah kursor jadi bentuk yang bisa di tekaan 
+  overflow: hidden;
+} */
+
+/* .carousel img {
+  height: 340px;
+  width: calc(100% / 3);
+  margin-left: 15px;
+  object-fit: cover; /*digunakan untuk gambar tidak pipih atau aneh saat di crop 
+} */
+
+/* .carousel img:first-child {
+  margin-left: 0px;
+
+} */
+
+.galery {
+  padding: 10rem 7% 1.4rem;
+  justify-content: center;
+}
+
+.galery h2 {
+  text-align: center;
+  font-family: "Baloo Thambi 2";
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #0e3b35;
+}
+
+.galery h4 {
+  max-width: 30rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-left: 25rem;
+}
+
+.galery .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  overflow-x: hidden;
+}
+
+.galery .row .galery1,
+.galery2,
+.galery3 {
+  display: flex;
+}
+
+.galery .row .galery1 img,
+.galery2 img,
+.galery3 img {
+  cursor: pointer;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 5rem;
+}
+
+/* .galery .row .cta1, .cta2, .cta3 {
+  color: #122d29;
+  position: relative;
+  margin-top: 4rem;
+  top: 50%;
+  right: 50%;
+  background-color: #3f6b6b;
+
+} */
+
+.galery .row .cta1,
+.galery .row .cta2,
+.galery .row .cta3 {
+  color: #122d29;
+  position: relative;
+  margin-top: 2rem;
+  top: 50%;
+  right: 50%;
+  background-color: #3f6b6b;
+  padding: 0.6rem 3rem; /* Atur padding sesuai kebutuhan */
+  max-width: 50%; /* Atur lebar maksimum tombol sesuai kebutuhan */
+  height: 5%;
+  color: whitesmoke;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.galery .row .cta1 :hover, .cta2 :hover,
+ .cta3 :hover {
+  color: #d6fbfb;
+}
