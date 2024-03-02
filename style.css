@@ -290,6 +290,7 @@ justify-content: center;
   height: 20rem;
   object-fit: cover;
   margin-bottom: 5rem;
+  border-radius: 1rem;
 }
 
 /* .galery .row .cta1, .cta2, .cta3 {
