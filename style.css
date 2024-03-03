@@ -303,9 +303,8 @@ justify-content: center;
 
 } */
 
-.galery .row .cta1,
-.galery .row .cta2,
-.galery .row .cta3 {
+
+.galery .row .cta {
   color: #122d29;
   position: relative;
   margin-top: 2rem;
@@ -320,7 +319,3 @@ justify-content: center;
   text-align: center;
 }
 
-.galery .row .cta1 :hover, .cta2 :hover,
- .cta3 :hover {
-  color: #d6fbfb;
-}
